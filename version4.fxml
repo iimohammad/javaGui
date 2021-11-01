@@ -1,0 +1,1397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1024.0" maxWidth="1280.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.5, 0.5" layoutX="183.0" layoutY="74.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane maxHeight="30.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #c1c3c7;">
+               <children>
+                  <GridPane prefHeight="50.0" prefWidth="1278.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="314.0" minWidth="10.0" prefWidth="56.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="892.0" minWidth="10.0" prefWidth="295.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="955.0" minWidth="10.0" prefWidth="432.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="317.0" minWidth="10.0" prefWidth="107.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="343.0" minWidth="10.0" prefWidth="343.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="45.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <ImageView fx:id="logo" fitHeight="27.0" fitWidth="78.0" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Jetco-Logo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <GridPane prefHeight="30.0" prefWidth="275.0" GridPane.columnIndex="1">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="257.0" minWidth="10.0" prefWidth="35.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="257.0" minWidth="3.0" prefWidth="95.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="528.0" minWidth="0.0" prefWidth="26.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="765.0" minWidth="0.0" prefWidth="20.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="765.0" minWidth="10.0" prefWidth="117.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <HBox alignment="CENTER" GridPane.columnIndex="1">
+                                 <children>
+                                    <Text fx:id="startTime" fill="#0b421c" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Starting Time" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Serif Regular" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="30.0" prefWidth="18.0" GridPane.columnIndex="2">
+                                 <children>
+                                    <Text fx:id="start_min" strokeType="OUTSIDE" strokeWidth="0.0" text="00" textAlignment="CENTER" wrappingWidth="27.5419921875">
+                                       <font>
+                                          <Font name="Serif Regular" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="30.0" prefWidth="21.0" GridPane.columnIndex="3">
+                                 <children>
+                                    <Text fx:id="start_sec" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </GridPane>
+                        <HBox alignment="CENTER" GridPane.columnIndex="5">
+                           <children>
+                              <ImageView fx:id="connection_img" fitHeight="28.0" fitWidth="33.0">
+                                 <image>
+                                    <Image url="@../images/connect.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <GridPane prefHeight="50.0" prefWidth="336.0" GridPane.columnIndex="4">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="243.0" minWidth="10.0" prefWidth="118.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="4.0" prefWidth="19.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="8.0" prefWidth="16.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="83.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="30.0" prefWidth="113.0" style="-fx-background-color: #c1c3c7;">
+                                 <children>
+                                    <Text fx:id="RemainTime" fill="#f20000" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Remaining Time">
+                                       <HBox.margin>
+                                          <Insets right="2.0" />
+                                       </HBox.margin></Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="1">
+                                 <children>
+                                    <Text fx:id="Remain_min" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="00" wrappingWidth="42.5419921875">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font></Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" GridPane.columnIndex="2">
+                                 <children>
+                                    <Text fx:id="Remain_Sec" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="00" wrappingWidth="31.5419921875">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font></Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" GridPane.columnIndex="4">
+                                 <children>
+                                    <Text fx:id="connection_status" fill="#274037" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Connected" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </GridPane>
+                        <HBox alignment="CENTER" style="-fx-border-width: 10px;" GridPane.columnIndex="2">
+                           <children>
+                              <Text fx:id="Title" fill="#1b05dd" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: #2d343b; -fx-font-family: Ubuntu; -fx-font-size: 27; -fx-font-weight: bold;" text="BCM Fucntional Testbench">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <opaqueInsets>
+                              <Insets left="5.0" />
+                           </opaqueInsets>
+                        </HBox>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <SplitPane dividerPositions="0.29797979797979796, 0.5" prefHeight="910.0" prefWidth="1278.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane maxWidth="340.0" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #c1c3c7;">
+                           <children>
+                              <GridPane layoutX="72.0" layoutY="80.0" prefHeight="908.0" prefWidth="377.0" style="-fx-border-color: #c1c3c7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="136.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="67.0" minWidth="10.0" prefWidth="41.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="128.0" minWidth="0.0" prefWidth="48.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="10.0" prefWidth="121.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #2d343b;">
+                                       <children>
+                                          <Label fx:id="sw_name" alignment="CENTER" contentDisplay="CENTER" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Switch Function" textFill="#f8f7fa">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" style="-fx-background-color: #2d343b;" GridPane.columnIndex="1">
+                                       <children>
+                                          <Label fx:id="swType" alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="60.0" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Type" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" style="-fx-background-color: #2d343b;" GridPane.columnIndex="2">
+                                       <children>
+                                          <Label fx:id="sw_status" alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="43.0" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Status" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="FRHDoorLockBox_Id" alignment="CENTER" GridPane.rowIndex="1">
+                                       <children>
+                                          <Label fx:id="FRHDoorLock_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="FRH Door Lock" textFill="#650000" />
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                       </GridPane.margin>
+                                    </HBox>
+                                    <HBox fx:id="FLHDoorLockBox_Id" alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="2">
+                                       <children>
+                                          <Label fx:id="FLHDoorLock_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="FLH Door Lock" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="FLHDoorStatusBox_Id" alignment="CENTER" GridPane.rowIndex="3">
+                                       <children>
+                                          <Label fx:id="FLHDoorStatus_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="FLH Door Status" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="FRHDoorStatusBox_Id" alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="4">
+                                       <children>
+                                          <Label fx:id="FRHDoorStatus_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="FRH Door Status&quot;" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="RLHDoorStatusBox_Id" alignment="CENTER" GridPane.rowIndex="5">
+                                       <children>
+                                          <Label fx:id="RLHDoorStatus_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="RLH Door Status" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="RRHDoorStatusBox_Id" alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="6">
+                                       <children>
+                                          <Label fx:id="RRHDoorStatus_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="RRH Door Status" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="BonnetStatusBox_Id" alignment="CENTER" GridPane.rowIndex="7">
+                                       <children>
+                                          <Label fx:id="BonnetStatus_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Bonnet Status" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="SideLampBox_Id" alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="8">
+                                       <children>
+                                          <Label fx:id="SideLamp_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Side Lamp" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="DippedLampBox_Id" alignment="CENTER" GridPane.rowIndex="9">
+                                       <children>
+                                          <Label fx:id="DippedLamp_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Dipped Lamp" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="MainLampBox_Id" alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="10">
+                                       <children>
+                                          <Label fx:id="MainLamp_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Main Lamp" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="LHIndicatorBox_Id" alignment="CENTER" GridPane.rowIndex="11">
+                                       <children>
+                                          <Label fx:id="LHIndicator_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="LH Indicator" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="RHIndicatorBox_Id" alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="12">
+                                       <children>
+                                          <Label fx:id="RHIndicator_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="RH Indicator" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="HazardBox_Id" alignment="CENTER" GridPane.rowIndex="13">
+                                       <children>
+                                          <Label fx:id="Hazard_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Hazard" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="FrontFogLampBox_Id" alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="14">
+                                       <children>
+                                          <Label fx:id="FrontFogLamp_Id" style="-fx-font-family: Ubuntu;" text="Front Fog Lamp" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="RearFogLampBox_Id" alignment="CENTER" GridPane.rowIndex="15">
+                                       <children>
+                                          <Label fx:id="RearFogLamp_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Rear Fog Lamp" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="BrakePedalBox_Id" alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="16">
+                                       <children>
+                                          <Label fx:id="BrakePedal_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Brake Pedal" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" GridPane.rowIndex="17">
+                                       <children>
+                                          <Label fx:id="ReverseGear_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Reverse Gear" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="FlasshingLightBox_Id" alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="18">
+                                       <children>
+                                          <Label fx:id="FlasshingLight_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Flasshing Light" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="RearScreenHeaterBox_Id" alignment="CENTER" GridPane.rowIndex="19">
+                                       <children>
+                                          <Label fx:id="RearScreenHeater_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Rear Screen Heater" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="AirConditionerBox_Id" alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="20">
+                                       <children>
+                                          <Label fx:id="AirConditioner_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Air Conditioner" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="HornBox_Id" alignment="CENTER" GridPane.rowIndex="21">
+                                       <children>
+                                          <Label fx:id="Horn_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Horn" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="FLHManualupBox_Id" alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="22">
+                                       <children>
+                                          <Label fx:id="FLHManualup_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="FLH Manual up" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="FLHManualdownBox_Id" alignment="CENTER" GridPane.rowIndex="23">
+                                       <children>
+                                          <Label fx:id="FLHManualdown_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="FLH Manual down" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="FRHManualupBox_Id" alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="24">
+                                       <children>
+                                          <Label fx:id="FRHManualup_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="FRH Manual up" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="FRHManualdownBox_Id" alignment="CENTER" GridPane.rowIndex="25">
+                                       <children>
+                                          <Label fx:id="FRHManualdown_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="FRH Manual down" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="RLHManualupBox_Id" alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="26">
+                                       <children>
+                                          <Label fx:id="RLHManualup_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="RLH Manual up" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="RLHManualdownBox_Id" alignment="CENTER" GridPane.rowIndex="27">
+                                       <children>
+                                          <Label fx:id="RLHManualdown_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="RLH Manual down" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="RRHManualupBox_Id" alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="28">
+                                       <children>
+                                          <Label fx:id="RRHManualup_Id" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="RRH Manual up" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" GridPane.rowIndex="29">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="RRH Manual down" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="30">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="R_Windows Isolator" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" GridPane.rowIndex="31">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Front Wash pump" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="32">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="FHS Wipper" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" GridPane.rowIndex="33">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="FLS Wipper" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="34">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="F_Int Wiper" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" GridPane.rowIndex="35">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="F_Wiper MIST" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="36">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="F_Auto Wiper" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" GridPane.rowIndex="37">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="F_Wiper Zero_P" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" style="-fx-background-color: #5a86e8;" GridPane.rowIndex="38">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="F_Int Volume" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #2d343b;" GridPane.columnIndex="3">
+                                       <children>
+                                          <Label fx:id="sw_port" alignment="CENTER" contentDisplay="CENTER" prefHeight="24.0" prefWidth="36.0" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Port" textFill="#f8f7fa" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                       </GridPane.margin>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                       </GridPane.margin>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                       </GridPane.margin>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="15" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="16" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="17" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="18" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="17" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="18" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="19" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="19" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="19" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="20" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="20" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="21" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="21" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="22" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="22" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="22" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="23" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="24" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="38" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="37" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="36" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="35" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="34" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="33" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="32" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="31" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="30" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="29" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="28" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="27" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="26" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="25" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="1" GridPane.rowIndex="24" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="23" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="34" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="38" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="38" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="37" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="37" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="36" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="36" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="35" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="35" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="33" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="33" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="32" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="32" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="24" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="21" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="23" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="25" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="27" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="30" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="31" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" GridPane.columnIndex="2" GridPane.rowIndex="29" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="28" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="2" GridPane.rowIndex="26" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="25" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="26" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="27" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="28" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" GridPane.columnIndex="3" GridPane.rowIndex="29" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="30" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="31" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5a86e8;" GridPane.columnIndex="3" GridPane.rowIndex="34" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane maxWidth="460.0" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: gray;">
+                           <children>
+                              <GridPane layoutY="101.0" maxWidth="-Infinity" prefHeight="908.0" prefWidth="271.0" style="-fx-border-color: #0a4b59; -fx-border-radius: 18px; -fx-background-color: #c1c3c7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="152.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="67.0" minWidth="3.0" prefWidth="33.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="10.0" prefWidth="55.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="10.0" prefWidth="53.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="0.0" prefWidth="40.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="82.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="45.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #2d343b;">
+                                       <children>
+                                          <Label style="-fx-font-weight: bold;" text="Function" textFill="#edf3f7">
+                                             <font>
+                                                <Font size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #2d343b;" GridPane.columnIndex="1">
+                                       <children>
+                                          <Label style="-fx-font-weight: bold;" text="Type" textFill="#edf3f7">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #2d343b;" GridPane.columnIndex="2">
+                                       <children>
+                                          <Label prefHeight="38.0" prefWidth="80.0" style="-fx-font-weight: bold;" text="Avg. Current" textAlignment="CENTER" textFill="#edf3f7" wrapText="true">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="38.0" prefWidth="49.0" style="-fx-background-color: #2d343b;" GridPane.columnIndex="3">
+                                       <children>
+                                          <Label style="-fx-font-weight: bold;" text="Max. Current" textAlignment="CENTER" textFill="#edf3f7" wrapText="true">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #2d343b;" GridPane.columnIndex="4">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="38.0" prefWidth="69.0" rotate="90.0">
+                                             <children>
+                                                <Label rotate="-90.0" style="-fx-font-weight: bold;" text="Status" textAlignment="CENTER" textFill="#edf3f7">
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="38.0" prefWidth="40.0" style="-fx-background-color: #2d343b;" GridPane.columnIndex="5">
+                                       <children>
+                                          <Label style="-fx-font-weight: bold;" text="Port" textAlignment="CENTER" textFill="#edf3f7">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="47.0" prefWidth="38.0" style="-fx-background-color: #2d343b;" GridPane.columnIndex="6">
+                                       <children>
+                                          <Label rotate="-90.0" style="-fx-font-weight: bold;" text="Current" textAlignment="CENTER" textFill="#edf3f7">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.rowIndex="1">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Master Lock SW LED" textFill="#650000" wrapText="true">
+                                             <font>
+                                                <Font size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.rowIndex="2">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Hazard Function LED" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.rowIndex="3">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Screen Heater SW LED" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.rowIndex="4">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Right Side Lamp" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="5">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="License Plate Lamp" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.rowIndex="6">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Day Running Light" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="7">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Doors &amp;Trunk Lamp" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.rowIndex="8">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Back Light for all SW" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="9">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Rear Screen Heater" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="10">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;">
+                                             <children>
+                                                <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Fold/Unfold Mirror Ctrl" textFill="WHITE" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="11">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Mirror Folding Enable" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.rowIndex="12">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="RH Front Main Lamp" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="13">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="LH Front Main Lamp" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.rowIndex="14">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Right Dipped Lamp" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="15">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Left Dipped Lamp" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.rowIndex="16">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Left Indicator Lamp" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="17">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Right Indicator Lamp" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.rowIndex="18">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Front RH Fog Lamp" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="19">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Front LH Lamp" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.rowIndex="20">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Rear Fog Lamp" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="21">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="LH Brake Lamp" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.rowIndex="22">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="RH Brake Lamp" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="23">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Reverse Lamp" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="13" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="12" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="11" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="11" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="12" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="13" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="14" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="15" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="16" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="17" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="18" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="19" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="20" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="21" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="22" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="23" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="23" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="22" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="21" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="20" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="19" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="10" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="11" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="12" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="13" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="14" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="23" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="22" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="21" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="19" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="16" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="17" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="18" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="19" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="20" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="21" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="22" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="23" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="23" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="23" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="22" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="22" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="21" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="21" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="20" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="19" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="18" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="17" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="15" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="14" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="15" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="15" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="16" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="17" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="18" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="19" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="20" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="16" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="17" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="18" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane maxWidth="463.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;">
+                           <children>
+                              <GridPane layoutX="96.0" layoutY="106.0" prefHeight="908.0" prefWidth="653.0" style="-fx-border-color: #0a4b59; -fx-border-radius: 18px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="148.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="10.0" prefWidth="34.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.0" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="111.0" minWidth="10.0" prefWidth="52.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="41.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="81.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="48.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="71.0" prefWidth="145.0" style="-fx-background-color: #2d343b;">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-weight: bold;" text="Function" textAlignment="CENTER" textFill="#edf3f7" />
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                       </GridPane.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #2d343b;" GridPane.columnIndex="1">
+                                       <children>
+                                          <Label style="-fx-font-weight: bold;" text="Type" textFill="#edf3f7">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #2d343b;" GridPane.columnIndex="2">
+                                       <children>
+                                          <Label prefHeight="28.0" prefWidth="59.0" style="-fx-font-weight: bold;" text="Avg. Current" textAlignment="CENTER" textFill="#edf3f7" wrapText="true">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #2d343b;" GridPane.columnIndex="3">
+                                       <children>
+                                          <Label alignment="CENTER" style="-fx-font-weight: bold;" text="Max. Current" textFill="#edf3f7" wrapText="true">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #2d343b;" GridPane.columnIndex="4">
+                                       <children>
+                                          <Label style="-fx-font-weight: bold;" text="Status" textFill="#edf3f7">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #2d343b;" GridPane.columnIndex="5">
+                                       <children>
+                                          <Label style="-fx-font-weight: bold;" text="Port" textFill="#edf3f7">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="89.0" prefWidth="60.0" style="-fx-background-color: #2d343b;" GridPane.columnIndex="6">
+                                       <children>
+                                          <Label rotate="-90.0" style="-fx-font-weight: bold;" text="Current" textFill="#edf3f7">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Roof Lamp(PWM)" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.rowIndex="2">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Mirror Heater" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Sequential Unlock" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.rowIndex="4">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Central Lock" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="5">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Central Unlock" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.rowIndex="6">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Trunk Lid Actuator" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="7">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Window Lock" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" style="-fx-background-color: #3256ab;" GridPane.rowIndex="8">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Window Unlock" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" GridPane.rowIndex="9">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="F_Wiper Control Relay" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" style="-fx-background-color: #3256ab;" GridPane.rowIndex="10">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="F_Wiper Speed Relay" textFill="#fffdfd" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="11">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="F_Wash pump Relay" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" style="-fx-background-color: #3256ab;" GridPane.rowIndex="12">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Horn 1 Relay" textFill="#fffdfd" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" GridPane.rowIndex="13">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Horn 2 Relay" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" style="-fx-background-color: #3256ab;" GridPane.rowIndex="14">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="FLH Win Motor up" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" GridPane.rowIndex="15">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="FLH Win Motor down" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" style="-fx-background-color: #3256ab;" GridPane.rowIndex="16">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="FRH Win Motor up" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" GridPane.rowIndex="17">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="FRH Win Motor down" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" style="-fx-background-color: #3256ab;" GridPane.rowIndex="18">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="RLH Win Motor up" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" GridPane.rowIndex="19">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="RLH Win Motor down" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" style="-fx-background-color: #3256ab;" GridPane.rowIndex="20">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="RRH Win Motor up" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" GridPane.rowIndex="21">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="RRH Win Motor down" textFill="#650000" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="59.0" prefWidth="34.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <children>
+                                          <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #2d343b;">
+                                       <children>
+                                          <Label style="-fx-font-weight: bold;" text="Function" textFill="#edf3f7">
+                                             <font>
+                                                <Font size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #2d343b;">
+                                       <children>
+                                          <Label style="-fx-font-weight: bold;" text="Type" textFill="#edf3f7">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #2d343b;">
+                                       <children>
+                                          <Label prefHeight="38.0" prefWidth="80.0" style="-fx-font-weight: bold;" text="Avg. Current" textAlignment="CENTER" textFill="#edf3f7" wrapText="true">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="38.0" prefWidth="49.0" style="-fx-background-color: #2d343b;">
+                                       <children>
+                                          <Label style="-fx-font-family: Ubuntu; -fx-font-weight: bold;" text="Function" textAlignment="CENTER" textFill="#fffdfd" wrapText="true">
+                                             <font>
+                                                <Font size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #c1c3c7;" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="10" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="21" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="21" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="21" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="21" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="21" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="21" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="20" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="20" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="20" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="20" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="20" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="19" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="11" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="11" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="11" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="12" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="12" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="12" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="13" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="13" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="13" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="14" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="14" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="14" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="16" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="16" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="16" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="16" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="15" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="17" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="17" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="17" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="17" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="15" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="15" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="17" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="6" GridPane.rowIndex="18" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="19" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="5" GridPane.rowIndex="18" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="19" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="3" GridPane.rowIndex="18" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="4" GridPane.rowIndex="18" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="19" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="19" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3256ab;" GridPane.columnIndex="2" GridPane.rowIndex="18" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="19" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane maxHeight="15.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <GridPane layoutX="252.0" layoutY="-9.0" prefHeight="50.0" prefWidth="1278.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="66.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="0.0" prefWidth="74.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="404.0" minWidth="0.0" prefWidth="97.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="650.0" minWidth="0.0" prefWidth="12.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="640.0" minWidth="10.0" prefWidth="142.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="640.0" minWidth="0.0" prefWidth="19.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="640.0" minWidth="4.0" prefWidth="19.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="640.0" minWidth="10.0" prefWidth="19.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="375.0" minWidth="10.0" prefWidth="96.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="476.0" minWidth="10.0" prefWidth="29.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="566.0" minWidth="10.0" prefWidth="142.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="566.0" minWidth="5.0" prefWidth="12.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="566.0" minWidth="10.0" prefWidth="17.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="566.0" minWidth="10.0" prefWidth="133.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="566.0" minWidth="10.0" prefWidth="292.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="566.0" minWidth="10.0" prefWidth="40.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="665.0" minWidth="10.0" prefWidth="69.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="65.0" text="Save">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="112.0" GridPane.columnIndex="2">
+                           <children>
+                              <Label text="Input Voltage">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="40.0" prefWidth="13.0" GridPane.columnIndex="3" />
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="128.0" GridPane.columnIndex="4">
+                           <children>
+                              <ProgressBar prefHeight="18.0" prefWidth="143.0" progress="0.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="73.0" GridPane.columnIndex="6">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="7" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="8">
+                           <children>
+                              <Label text="Input Current">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnIndex="10" />
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="32.0" GridPane.columnIndex="12">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" GridPane.columnIndex="14">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Warning" />
+                           </children>
+                        </HBox>
+                        <HBox GridPane.columnIndex="16">
+                           <children>
+                              <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="71.0" text="Load" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
